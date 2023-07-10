@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="script.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="stopwatch-container">
+      <div class="stopwatch">
+        <div
+          style="
+            display: flex;
+            flex-direction: row;
+            align-items: first baseline;
+            gap: 1px;
+          "
+        >
+          <h1 id="time">00:00:00.0</h1>
+          <h2 id="last2">00</h2>
+        </div>
+        <p id="time2">SPLIT TIME</p>
+      </div>
+      <div class="buttons">
+        <button
+          id="start-pause"
+          onclick="startPause()"
+          style="background-color: darkcyan; color: white; border-width: 0"
+        >
+          Start
+        </button>
+        <button id="split" onclick="split()" disabled>Split</button>
+        <button id="reset" onclick="reset()" disabled>Reset</button>
+      </div>
+    </div>
+    <div
+      style="
+        width: 800px;
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: first baseline;
+      "
+    >
+      <hr />
+      <ul id="split-times"></ul>
+    </div>
+  </body>
+</html>

@@ -33,11 +33,11 @@
     width: 80px;
   }
   .split-pause {
-    color: palevioletred; /* Set the desired color for split time during pause */
+    color: palevioletred; 
   }
   
   .split {
-    color: #F79327; /* Set the desired color for split time during active split */
+    color: #F79327;
   }
 
   #split-times{
